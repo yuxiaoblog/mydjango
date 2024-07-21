@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青年大学未观看检测系统</title>
+    <style>
+        body {text-align: center;} table {margin: auto;}
+    </style>
+</head>
+<body background="https://fakeimg.pl/350x200/?text=Xu Le">
+    <h1>当前链接未观看人员</h1>
+    <p>状态：Success</p>
+    <p>作者：Xu Le</p>
+    <table border='1'>
+        <tr>
+            <th>
+                <h3>ID</h3>
+            </th>
+            <th>
+                <h3>姓名</h3>
+            </th>
+            <th>
+                <h3>学号</h3>
+            </th>
+        </tr>
+    {%for i in per%}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.stu_num}}</td>
+        </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>
